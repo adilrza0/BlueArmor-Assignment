@@ -50,19 +50,16 @@ The app will start on `http://localhost:3000`.
 ## **Folder Structure**
 ```
 /src
- ├── /components         # UI Components (View Layer)
- │    ├── Counter.jsx    # Counter UI Component
- │    ├── Button.jsx     # Reusable Button Component
  │
- ├── /state              # Model Layer (State Management)
+ ├── /Model              # Model Layer (State Management)
  │    ├── counterStore.js # BehaviorSubject for Counter State
  │    ├── autoIncrement.js # Auto-increment logic using RxJS
  │
  ├── /intents            # Intent Layer (User Actions)
  │    ├── counterIntents.js # Increment, Decrement, Reset, Toggle
  │
- ├── /pages              # Screens (Combines View + State)
- │    ├── CounterPage.jsx # Connects View, Model, and Intents
+ ├── /View              # Screens (Combines View + State)
+ │    ├── Counter.jsx # Connects View, Model, and Intents
  │
  ├── App.js              # Main Application
  ├── index.js            # Entry Point
